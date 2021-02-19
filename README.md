@@ -1,9 +1,11 @@
 # MAREX-SIM
 A simulator for a new membrane processor architecture, made by RTC-Lab at University of Seville
 
-This software is intended to be used as a proof of concept and validation for the **MAREX** architecture. 
+This software is intended to be used as a proof of concept and validation of **MAREX** architecture. Only for researching purposes.
 
-# REPOSITORY CONTENTS
+# THIS REPOSITORY CONTENTS ...
 
-- MAREX-SIM.exe: MAREX Simulator in a x64 executable. It needs .NET 4.2.
-- Batch archives: workloads used for gather results about 
+- MARESIM.cs: MAREX's source code to be compiled in Visual Studio with .NET 4.5.
+- Batch archives: workloads used for gathering results. See comments inside.
+- LICENSE
+- Readme.md: this file.
