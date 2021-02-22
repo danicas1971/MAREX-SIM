@@ -1,4 +1,4 @@
-﻿// -------------- MAREX-SIM v1.0: A simulator for MAREX Architecture ---------------
+// -------------- MAREX-SIM v1.0: A simulator for MAREX Architecture ---------------
 
 // Daniel Cascado-Caballero, Fernando Diaz-del-Rio, Daniel Cagigas-Muñiz,
 // Antonio Rios-Navarro, Jose-Luis Guisado-Lizar,
@@ -20,7 +20,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace MaMAREXSIM
+namespace MaquinaFlujo2
 {
     public class C_EL : IComparable<C_EL>
     {
@@ -132,7 +132,7 @@ namespace MaMAREXSIM
         
         public const int Rm = 1;
         public const int RM = -1;
-        private int cxc, cdd; 
+        private int ContE, cdd; 
 
         public bool aix;
 
@@ -232,7 +232,7 @@ namespace MaMAREXSIM
                         else
                         {
                 
-                            if (ccc_el.c_ac > 0 && alex <= P_dos[i].col && aix && (ContadorExeC > 0 || ContadorExeC == RM))
+                            if (ccc_el.c_ac > 0 && alex <= P_dos[i].col && aix && (ContE > 0 || ContE == RM))
                 
                             {
                 
@@ -284,7 +284,7 @@ namespace MaMAREXSIM
 
             if (ccc_el.til == C_EL.TIPO_ALFA)
             {
-                ContadorExeC = cdd; 
+                ContE = cdd; 
                 puix = 0; 
             }
 
@@ -302,11 +302,11 @@ namespace MaMAREXSIM
                         P_dos[i].c_en -= P_dos[i].c_ac;
                 }
 
-                if (ContadorExeC != -1 && ContadorExeC > 0)
+                if (ContE != -1 && ContE > 0)
                 {
-                    ContadorExeC--;
+                    ContE--;
 
-                    if (ContadorExeC == 0)
+                    if (ContE == 0)
                         puix = 1;
                 }
                 resultado = true;
@@ -1004,7 +1004,7 @@ namespace MaMAREXSIM
             string caracter = "s";
             int impre = 4; 
             bool ergo = true;
-            int sel = 461;
+            int semilla = 461;
             int n = 5,indiarg;
             string mod = "REF";
             bool fin;
