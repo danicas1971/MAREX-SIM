@@ -1,3 +1,5 @@
+<p align="center"> <img src="https://raw.githubusercontent.com/danicas1971/MAREX-SIM/main/marex_logo.png"></p>
+
 # MAREX-SIM
 A simulator for a new membrane processor architecture, made by RTC-Lab at University of Seville
 
